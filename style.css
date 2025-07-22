@@ -1,0 +1,17 @@
+/* 共通設定 */
+* {
+  font-family: "Hiragino Mincho Pro", serif;
+}
+
+.word {
+  cursor: default;
+  position: absolute;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  transition: 
+    transform 0.4s ease,
+    opacity 0.4s ease,
+    font-size 0.4s ease,
+    filter 0.4s ease;
+}
+
