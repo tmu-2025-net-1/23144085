@@ -8,54 +8,68 @@
   </head>
 
   <body>
-    <div class="canvas" style="width: 1346px; height: 13987px; position: relative; background: white; overflow: hidden">
+
+    <div id="intro-overlay">
+      <div class="intro-content">
+        <h2>ことばは息をしている</h2>
+        <p>このサイトではことばが生きていると感じられるような体験を提供することを目的としています。
+        <p>文字に触れるとさらに文字の生命力を感じることができるかもしれません。</p>
+        <p>パソコンで最大画面表示にしてご覧ください。</p>
+        <p>Mキーを押すともう一度この画面を見ることができます。</p>
+        <p>では文字の呼吸を感じてみてください。</p>
+        </p>
+        <button id="close-intro">×閉じる</button>
+      </div>
+    </div>
+
+    <div class="canvas" style="width: 1346px; height: 14500px; position: relative; background: white; overflow: hidden">
       <div class="title" style="left: 652px; top: 110px; width: 41px; height: 599px; position: absolute; font-size: 40px">ことばは息をしている</div>
 
       <!--存在感-->
-      <div class="word group-existence" style="left: 365px; top: 2250px; font-size: 40px">衝動</div>
-      <div class="word group-existence" style="left: 194px; top: 1700px; font-size: 40px">ひらめき</div>
-      <div class="word group-existence" style="left: 612px; top: 1800px; font-size: 40px">いまここに</div>
-      <div class="word group-existence" style="left: 815px; top: 2400px; font-size: 40px">走り出す</div>
-      <div class="word group-existence" style="left: 1101px; top: 2112px; font-size: 40px">叫び</div>
+      <div class="word group-existence" style="left: 365px; top: 2250px; font-size: 40px">ことば</div>
+      <div class="word group-existence" style="left: 194px; top: 1700px; font-size: 40px">ひかり</div>
+      <div class="word group-existence" style="left: 612px; top: 1800px; font-size: 40px">まなざし</div>
+      <div class="word group-existence" style="left: 815px; top: 2400px; font-size: 40px">からだ</div>
+      <div class="word group-existence" style="left: 1101px; top: 2112px; font-size: 40px">ぬくもり</div>
       <div class="word group-existence" style="left: 955px; top: 1550px; font-size: 40px">はじまり</div>
 
       <!--生命感-->
-      <div class="word group-life" style="left: 914px; top: 3232px; font-size: 36px">あたたかい</div>
-      <div class="word group-life" style="left: 215px; top: 2942px; font-size: 36px">鼓動がある</div>
-      <div class="word group-life" style="left: 504px; top: 3085px; font-size: 36px">血がめぐる</div>
+      <div class="word group-life" style="left: 914px; top: 3232px; font-size: 36px">ゆらぎ</div>
+      <div class="word group-life" style="left: 215px; top: 2942px; font-size: 36px">鼓動</div>
+      <div class="word group-life" style="left: 504px; top: 3085px; font-size: 36px">いのち</div>
       <div class="word group-life" style="left: 673px; top: 2822px; font-size: 36px">息をする</div>
-      <div class="word group-life" style="left: 1069px; top: 2966px; font-size: 36px">ここにいる</div>
+      <div class="word group-life" style="left: 1069px; top: 2966px; font-size: 36px">触れ合い</div>
 
       <!--呼吸と感情-->
-      <div class="word group-breath" style="left: 236px; top: 3819px; font-size: 32px">やさしい息</div>
-      <div class="word group-breath" style="left: 1058px; top: 3717px; font-size: 32px">深呼吸</div>
-      <div class="word group-breath" style="left: 652px; top: 4026px; font-size: 32px">わたしの鼓動</div>
+      <div class="word group-breath" style="left: 236px; top: 3819px; font-size: 32px">ためいき</div>
+      <div class="word group-breath" style="left: 1058px; top: 3717px; font-size: 32px">ふるえ</div>
+      <div class="word group-breath" style="left: 652px; top: 4026px; font-size: 32px">やさしさ</div>
 
 
       <!--存在と気配-->
-      <div class="word group-sense" style="left: 886px; top: 4760px; font-size: 28px">存在する</div>
-      <div class="word group-sense" style="left: 277px; top: 5002px; font-size: 28px">触れるような視線</div>
+      <div class="word group-sense" style="left: 886px; top: 4760px; font-size: 28px">すれちがい</div>
+      <div class="word group-sense" style="left: 277px; top: 5002px; font-size: 28px">ぬくもり</div>
       <div class="word group-sense" style="left: 1049px; top: 5328px; font-size: 28px">だれかの気配</div>
 
       <!--消失-->
-      <div class="word group-fade" style="left: 844px; top: 6064px; font-size: 20px">うすれる</div>
+      <div class="word group-fade" style="left: 844px; top: 6064px; font-size: 20px">失う</div>
       <div class="word group-fade" style="left: 403px; top: 6519px; font-size: 20px">消えていく</div>
 
       <!--記憶-->
-      <div class="word group-memory" style="left: 227px; top: 7236px; font-size: 34px">まぶたの裏</div>
-      <div class="word group-memory" style="left: 1066px; top: 7111px; font-size: 34px">声のかたち</div>
-      <div class="word group-memory" style="left: 498px; top: 7724px; font-size: 34px">においが残る</div>
+      <div class="word group-memory" style="left: 227px; top: 7236px; font-size: 34px">おもかげ</div>
+      <div class="word group-memory" style="left: 1066px; top: 7111px; font-size: 34px">にじみ</div>
+      <div class="word group-memory" style="left: 498px; top: 7724px; font-size: 34px">ふりかえり</div>
       <div class="word group-memory" style="left: 864px; font-size: 34px; top: 7451px">おもいで</div>
 
       <!--流れ-->
       <div class="word group-flow" style="left: 855px; top: 8366px; font-size: 48px">流れる</div>
       <div class="word group-flow" style="left: 256px; top: 8737px; font-size: 48px">うつろう</div>
       <div class="word group-flow" style="left: 1032px; top: 9083px; font-size: 48px">手放す</div>
-      <div class="word group-flow" style="left: 542px; top: 9467px; font-size: 48px">とどまらない</div>
+      <div class="word group-flow" style="left: 542px; top: 9467px; font-size: 48px">溶け込む</div>
 
       <!--無限-->
       <div class="word group-infinity" style="left: 991px; top: 10154px; font-size: 50px">終わらない</div>
-      <div class="word group-infinity" style="left: 304px; top: 10676px; font-size: 50px">空白</div>
+      <div class="word group-infinity" style="left: 304px; top: 10676px; font-size: 50px">繰り返す</div>
       <div class="word group-infinity" style="left: 801px; top: 11114px; font-size: 50px">永遠</div>
 
       <!--サブタイトル-->
@@ -64,6 +78,9 @@
       
     </div>
 
-     <script src="proximity.js"></script>
+    <script src="proximity.js"></script>
+    <script src="scroll.js"></script>
+    <script src="menu.js"></script>
+    <script src="intro.js"></script>
   </body>
 </html>
