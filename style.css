@@ -3,6 +3,62 @@
   font-family: "Hiragino Mincho Pro", serif;
 }
 
+.canvas {
+  position: relative;
+  width: 100%;
+  height: 14500px;
+}
+
+.word {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  position: absolute;
+  top: 2.7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 2.5vw;
+}
+
+.group-existence {
+  font-size: 2.2vw; /*存在感 */
+}
+
+.group-life {
+  font-size: 1.8vw; /* 生命感 */
+}
+
+.group-breath {
+  font-size: 1.4vw; /* 呼吸と感情 */
+}
+
+.group-sense {
+  font-size: 1.4vw; /* 存在と気配*/
+}
+
+.group-fade {
+  font-size: 1.2vw; /* 消失 */
+}
+
+.group-memory {
+  font-size: 1.6vw; /* 記憶 */
+}
+
+.group-flow {
+  font-size: 1.8vw; /* ながれ*/
+}
+
+.group-infinity {
+  font-size: 2vw; /* 無限*/
+}
+
+
 .word {
   cursor: default;
   position: absolute;
@@ -43,3 +99,4 @@
   font-size: 16px;
   cursor: pointer;
 }
+
