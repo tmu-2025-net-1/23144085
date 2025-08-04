@@ -124,7 +124,7 @@ const groups = [
       let scale = 1 + 0.02 * Math.sin(progress * 2 * Math.PI);
       if (hovering) {
         const time = Date.now() % 5000;
-        scale += 0.001 * (time / 50); // 徐々に拡大
+        scale += 0.002 * (time / 50); // 徐々に拡大
       } else {
         el.style.filter = 'none';
       }
