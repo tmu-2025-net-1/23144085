@@ -8,18 +8,37 @@
   </head>
 
   <body>
-    <div id="intro-overlay">
-      <div class="intro-content">
-        <h2>ことばは息をしている</h2>
-        <p>このサイトではことばが生きていると感じられるような体験を提供することを目的としています。</p>
-        <p>文字に触れるとさらに文字の生命力を感じることができるかもしれません。</p>
-        <p>パソコンで最大画面表示にしてご覧ください。</p>
-        <p>Mキーを押すともう一度この画面を見ることができます。</p>
-        <p>では文字の呼吸を感じてみてください。</p>
-        <button id="close-intro">×閉じる</button>
-      </div>
+<div id="intro-overlay">
+  <div class="intro-content">
+    <h2>ことばは息をしている</h2>
+
+    <div class="intro-tabs">
+      <button id="tab-howto" class="tab active">操作方法</button>
+      <button id="tab-about" class="tab">about</button>
     </div>
 
+    <!-- about：最初は非表示 -->
+    <div id="about-section" class="tab-content">
+      <h3>8つの章が紡ぐ「いのち」の物語</h3>
+      <p>このサイトでは、言葉たちがまるで生き物のように、私たちに語りかけます。</p>
+      <p>8つの章に分かれたそれぞれのセクションで、言葉が持つ多様な表情や感情、時間の流れが、異なる動きとなって現れます。</p>
+      <p>この作品は、言葉の力を感じ、心に響く体験を提供することを目指しています。</p>
+      <p>作成者：やま</p>
+
+    </div>
+
+    <!-- 操作方法：最初に表示 -->
+    <div id="howto-section" class="tab-content active">
+      <p>パソコンやタブレットで最大画面表示にしてご覧ください。</p>
+      <p>このサイトではことばが生きていると感じられるような体験を提供することを目的としています。</p>
+      <p>文字に触れるとさらに文字の生命力を感じることができるかもしれません。</p>
+      <p>Mキーを押すともう一度この画面を見ることができます。</p>
+      <p>ぜひ文字の呼吸を感じてみてください。</p>
+    </div>
+
+    <button id="close-intro">×閉じる</button>
+  </div>
+</div>
     <div class="canvas">
       <div class="title">ことばは息をしている</div>
 
@@ -77,5 +96,6 @@
     <script src="scroll.js"></script>
     <script src="menu.js"></script>
     <script src="intro.js"></script>
+    <script src="change.js"></script>
   </body>
 </html>

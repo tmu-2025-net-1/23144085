@@ -3,7 +3,7 @@ const groups = [
   {
     className: 'group-existence',
     baseDuration: 3000,
-    hoverDuration: 1500,
+    hoverDuration: 1000,
     update: (el, progress) => {
       const scale = 1 + 0.15 * Math.sin(progress * 2 * Math.PI);
       el.style.transform = `scale(${scale})`;
@@ -11,8 +11,8 @@ const groups = [
   },
   {
     className: 'group-life',
-    baseDuration: 6000,
-    hoverDuration: 6000,
+    baseDuration: 3000,
+    hoverDuration: 3000,
     update: (el, progress, hovering) => {
       // 拡大縮小はいつも少しだけ動く
       const scale = 1 + 0.05 * Math.sin(progress * 2 * Math.PI);
@@ -27,10 +27,6 @@ const groups = [
       // 不透明度は周期的に変わる
       const opacity = 0.8 + 0.2 * Math.sin(progress * 2 * Math.PI);
       el.style.opacity = opacity;
-  
-      // 色相はゆっくり変化
-      const hue = progress * 360;
-      el.style.filter = `hue-rotate(${hue}deg)`;
     }
   }
   ,
@@ -46,7 +42,7 @@ const groups = [
 
       if (hovering) {
         // ホバー時に細かく震える
-        jitter = 0.03 * Math.sin(Date.now() / 50);
+        jitter = 0.1 * Math.sin(Date.now() / 50);
         translateX = (Math.random() - 0.5) * 0.1; // 横に揺れ
         translateY = (Math.random() - 0.5) * 0.1; // 縦に揺れ
       } else {
@@ -59,8 +55,8 @@ const groups = [
   },
   {
     className: 'group-sense',
-    baseDuration: 10000,
-    hoverDuration: 10000,
+    baseDuration: 3000,
+    hoverDuration: 2000,
     update: (el, progress, hovering) => {
       const scale = 1 - 0.1 * Math.abs(Math.sin(progress * 2 * Math.PI));
       el.style.transform = `scale(${scale})`;
@@ -78,8 +74,8 @@ const groups = [
   
   {
     className: 'group-fade',
-    baseDuration: 8000,
-    hoverDuration: 8000,
+    baseDuration: 5000,
+    hoverDuration: 5000,
     update: (el, progress, hovering) => {
       const scale = 1 + 0.05 * Math.sin(progress * 2 * Math.PI);
       const opacity = hovering ? 0.1 : 0.6 + 0.3 * Math.sin(progress * 2 * Math.PI);
@@ -89,8 +85,8 @@ const groups = [
   },
   {
     className: 'group-memory',
-    baseDuration: 10000,
-    hoverDuration: 10000,
+    baseDuration: 3000,
+    hoverDuration: 3000,
     update: (el, progress, hovering) => {
       const scale = 1 + 0.05 * Math.sin(progress * 2 * Math.PI);
       const blurAmount = hovering
@@ -122,14 +118,13 @@ const groups = [
   },
   {
     className: 'group-infinity',
-    baseDuration: 15000,
-    hoverDuration: 15000,
+    baseDuration: 3000,
+    hoverDuration: 2000,
     update: (el, progress, hovering) => {
       let scale = 1 + 0.02 * Math.sin(progress * 2 * Math.PI);
       if (hovering) {
         const time = Date.now() % 5000;
-        scale += 0.002 * (time / 100); // 徐々に拡大
-        el.style.filter = 'hue-rotate(' + (time % 360) + 'deg)'; // 色相も変化
+        scale += 0.001 * (time / 10); // 徐々に拡大
       } else {
         el.style.filter = 'none';
       }

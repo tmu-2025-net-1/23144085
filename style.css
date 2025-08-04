@@ -35,7 +35,7 @@
 }
 
 .group-breath {
-  font-size: 1.4vw; /* 呼吸と感情 */
+  font-size: 1.6vw; /* 呼吸と感情 */
 }
 
 .group-sense {
@@ -90,8 +90,47 @@
   border-radius: 10px;
   text-align: center;
   width: 1000px;
+  max-width: 90%;
+  height: 430px;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
+
+.tight-line-height p {
+  line-height: 0.8; /* 通常より少し狭い。もっと狭くするなら 1.1 や 1.0 もOK */
+}
+
+
+.intro-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.tab {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+  color: #444;
+}
+
+.tab.active {
+  border-color: #444;
+  font-weight: bold;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
 
 #close-intro {
   margin-top: 20px;
