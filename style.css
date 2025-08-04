@@ -96,7 +96,7 @@
 }
 
 .tight-line-height p {
-  line-height: 0.8; /* 通常より少し狭い。もっと狭くするなら 1.1 や 1.0 もOK */
+  line-height: 0.8;
 }
 
 
